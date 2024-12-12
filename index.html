@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=""/>
+    <title>Ecommerce Project</title>
+</head>
+
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<link rel="stylesheet" href="style.css">
+<body class="body">
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <!--navbar start-->
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+          <div class="logo"><img class="logo-icon" src="./img/images (1).png">
+          <p>Heisenberg</p></div>
+        </li>
+        <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+        <li class="nav_list"><a href="regnew.html" class="nav_link">Register</a></li>
+        <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+       
+        
+        <li class="nav_list">
+          <a href="cart.html" class="nav_list">
+            <span>
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart 2 Products - $124.40
+            </span>
+          </a>
+        </li>
+        
+        <li class="nav_list"><a href="profile.html" class="nav_link"><img class="profile-icon" src="./img/png-transparent-user-profile-computer-icons-profile-heroes-black-silhouette-thumbnail.png"></a></li>
+    </nav>
+     
+   
+
+    
+    <!--navbar end-->
+    <!--header start-->
+    <header class="header">
+      <div class="banner flex-space-around">
+        <marquee class="banner_title" behavior="" direction="">40% Sales Going On</marquee>
+        <div class="features flex-space-around">
+          <article class="feature flex-center">
+            <i class="fa-solid fa-truck feature_icon"></i>
+            <h3>Shipping in 4 days</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-brands fa-rocketchat feature_icon"></i>
+            <h3>Support 24/7</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-regular fa-credit-card feature_icon"></i>
+            <h3>Safe Payment</h3>
+          </article>
+          
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+
+    <main class="flex-center">
+      <div class="sidebar">
+      <section class="categoris-section">
+        <h3 class="section-title">Categoris</h3>
+        <ul class="list">
+          <li class="list_item">
+            <label for="phone">
+              <input type="checkbox" name="phone" id="phone" value="phone">
+            Laptop
+            </label>
+          </li>
+          <li class="list_item">
+            <label for="tablets">
+              <input type="checkbox" name="tablets" id="tablets" value="tablets">
+            HearPod
+            </label>
+          </li>
+          <li class="list_item">
+            <label for="television">
+              <input type="checkbox" name="television" id="television" value="television">
+              Smartwatch
+            </label>
+          </li>
+          <li class="list_item">
+            <label for="computers">
+              <input type="checkbox" name="computers" id="computers" value="computers">
+              Sunglasses
+            </label>
+          </li>
+          <li class="list_item">
+            <label for="headphones">
+              <input type="checkbox" name="headphones" id="headphones" value="headphones">
+              Headphones
+            </label>
+          </li>
+          
+        </ul>
+      </section>
+
+      <section class="price-section">
+        <h3 class="section-title">Price range</h3>
+        <ul class="list">
+          <li class="list_item">
+            <label for="price1">
+              <input type="radio" name="price" id="price1" value="[0,20]">
+            $0-$20
+            </label>
+            <li class="list_item">
+              <label for="price2">
+                <input type="radio" name="price" id="price2" value="[30,100]">
+              $30-$100
+              </label>
+              <li class="list_item">
+                <label for="price3">
+                  <input type="radio" name="price" id="price3" value="[100,200]">
+                $100-$200
+                </label>
+                <li class="list_item">
+                  <label for="price4">
+                    <input type="radio" name="price" id="price4" value="[250,300]">
+                  $250-$300
+                  </label>
+                  <li class="list_item">
+                    <label for="price5">
+                      <input type="radio" name="price" id="price5" value="[400,1000]">
+                    $400-$1000
+                    </label>
+          
+          
+        </ul>
+      </section>
+      <section class="shipping">
+        <h3 class="section-title">Shipping Option</h3>
+        <ul class="list">
+          <li class="list_item">
+            <label for="free">
+              <input type="radio" name="shipping" id="free" value="free">
+            Free
+            </label>
+            <li class="list_item">
+              <label for="paid">
+                <input type="radio" name="shipping" id="paid" value="paid">
+              Paid
+              </label>
+          </ul>
+          </section>
+      </div>
+      <div class="main-content">
+        <section class="actions flex-space-around">
+          <div class="action_sort">
+            <label for="sort">Sort By:</label>
+            <select name="sort" id="sort">
+              <option value="sold">Most Sold First
+            </option>
+              <option value="rating">Most Rated First
+              </option>
+              <option value="price">Cheapest First
+              </option>
+              <option value="arrival">Newest First
+              </option>
+              <option value="discount">Biggest discount First
+              </option>
+            </select>
+          </div>
+          <div class="actions_search">
+            <input type="text" placeholder="Search product">
+            <button class="btn">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+        <!--product section start-->
+        <section class="products">
+          <aritcle class="product card">
+            <div class="badge">
+              <span>5 in stock</span>
+              <hr class="hr-design">
+              <span>3 Sold</span>
+            </div>
+            <img class="product_img" src="./img/Headphones-Transparent-Background.png" alt="product1">
+            <div class="product_body">
+              <h3 class="product_name"> Sony V-4 Headphone</h3>
+              
+              <p class="product_description">
+                Black online at best price in Bangladesh from Rokomari.com. Latest Anker all products are widely. 
+              </p>
+              <h4 class="product_price">$250.99</h4>
+              <p class="product_rating">Rating:4.5/5</p>
+              <button class="btn product_button">Add to cart</button>
+              
+            </div>
+          </aritcle>
+          <aritcle class="product card">
+            <div class="badge">
+              <span>2 in stock</span>
+              <hr class="hr-design">
+              <span>10 Sold</span>
+            </div>
+            <img class="product_img" src="./img/61Hlrd3wYhL._AC_UF1000,1000_QL80_.jpg" alt="product2">
+            <div class="product_body">
+              <h3 class="product_name"> HEARMO HearPod</h3>
+              
+              <p class="product_description">
+                HEARMO HearPods Air True Wireless in Ear Earbuds with Upto 24H Playtime.
+              </p>
+              <h4 class="product_price">$150.99</h4>
+              <p class="product_rating">Rating:4/5</p>
+              <button class="btn product_button">Add to cart</button>
+              
+            </div>
+          </aritcle>
+        </aritcle>
+        <aritcle class="product card">
+          <div class="badge">
+            <span>6 in stock</span>
+            <hr class="hr-design">
+            <span>11 Sold</span>
+          </div>
+          <img class="product_img" src="./img/5c57c84f87f2a410611298_w300.webp" alt="product3">
+          <div class="product_body">
+            <h3 class="product_name"> Ray-Ban Sunglasses</h3>
+            
+            <p class="product_description">
+              Ray-Ban Stories: New Smart Glasses From Ray-Ban.
+            </p>
+            <h4 class="product_price">$150.99</h4>
+            <p class="product_rating">Rating:5/5</p>
+            <button class="btn product_button">Add to cart</button>
+            
+          </div>
+        </aritcle>
+      </aritcle>
+      <aritcle class="product card">
+        <div class="badge">
+          <span>1 in stock</span>
+          <hr class="hr-design">
+          <span>14 Sold</span>
+        </div>
+        <img class="product_img" src="./img/Samsung-Galaxy-Watch.jpg" alt="product4">
+        <div class="product_body">
+          <h3 class="product_name"> Samsung Galaxy Watch</h3>
+          
+          <p class="product_description">
+            The watch that watches out for you. Galaxy Watch3 combines smartphone-level productivity and leading health technology in one premium and classic .
+          </p>
+          <h4 class="product_price">$150.99</h4>
+          <p class="product_rating">Rating:5/5</p>
+          <button class="btn product_button">Add to cart</button>
+          
+        </div>
+      </aritcle>
+      <aritcle class="product card">
+        <div class="badge">
+          <span>7 in stock</span>
+          <hr class="hr-design">
+          <span>13 Sold</span>
+        </div>
+        <img class="product_img" src="./img/400.png" alt="product5">
+        <div class="product_body">
+          <h3 class="product_name">  MSI Global </h3>
+          
+          <p class="product_description">
+            Gaming Laptops | MSI Global.
+          </p>
+          <h4 class="product_price">$150.99</h4>
+          <p class="product_rating">Rating:5/5</p>
+          <button class="btn product_button">Add to cart</button>
+          
+        </div>
+      </aritcle>
+      <aritcle class="product card">
+        <div class="badge">
+          <span>5 in stock</span>
+          <hr class="hr-design">
+          <span>10 Sold</span>
+        </div>
+        <img class="product_img" src="./img/HW8-Ultra-Max-49mm-Smart-Watch-Orange.png" alt="product">
+        <div class="product_body">
+          <h3 class="product_name">  HW8-Ultra-Max-49mm-Smart-Watch</h3>
+         
+          <p class="product_description">
+            Smartwatch Men Women Bluetooth Calls Wireless.
+          </p>
+          <h4 class="product_price">$150.99</h4>
+          <p class="product_rating">Rating:5/5</p>
+          <button class="btn product_button">Add to cart</button>
+          
+        </div>
+      </aritcle>
+         
+
+        </section>
+       
+           <!--most sell product start-->
+        <div class="Most_sell">
+         
+          <h1>---New Product---</h1>
+        </div>
+        <div>
+          <section class="products">
+        
+          <aritcle class="product card">
+            
+            <img class="product_img" src="./img/s-l1200.webp" alt="product">
+            <div class="product_body">
+              <h3 class="product_name"> Sneakers For Man </h3>
+              
+              <p class="product_description">
+                Nike Flex Runner PS Girls Size 3Y Gray Casual Athletic Shoes Sneakers AT4663-018
+              </p>
+              <h4 class="product_price">$100.99</h4>
+              <button class="btn product_button">Add to cart</button>
+              
+            </div>
+          </aritcle>
+          <aritcle class="product card">
+            
+            <img class="product_img" src="./img/oxfords_collection_header_8f0f5513-4107-4e88-a6d5-a1bf2f50ebe5.webp" alt="product">
+            <div class="product_body">
+              <h3 class="product_name"> Sneakers For Women </h3>
+              
+              <p class="product_description">
+                Women's Vegan Shoes
+              </p>
+              <h4 class="product_price">$130.99</h4>
+              <button class="btn product_button">Add to cart</button>
+              
+            </div>
+          </aritcle>
+        </aritcle>
+        <aritcle class="product card">
+          
+          <img class="product_img" src="./img/1629717737612384e9619ceYDS_Product_4@2x.jpg" alt="product">
+          <div class="product_body">
+            <h3 class="product_name"> Jacket </h3>
+            
+            <p class="product_description">
+              Custom Design and Print Varsity Jacket 
+            </p>
+            <h4 class="product_price">$95.99</h4>
+            <button class="btn product_button">Add to cart</button>
+            
+          </div>
+        </aritcle>
+      </aritcle>
+      <aritcle class="product card">
+        
+        <img class="product_img" src="./img/960x0.webp" alt="product">
+        <div class="product_body">
+          <h3 class="product_name"> Mobile Charger </h3>
+          
+          <p class="product_description">
+            Why You Should Never Borrow Someone Else's Charging Cable
+          </p>
+          <h4 class="product_price">$30.99</h4>
+          <button class="btn product_button">Add to cart</button>
+          
+        </div>
+      </aritcle>
+      <aritcle class="product card">
+        
+        <img class="product_img" src="./img/Messenger_Bag_e_s_motion_ten-271548-0-638224987665522427.webp" alt="product">
+        <div class="product_body">
+          <h3 class="product_name"> Bag </h3>
+          
+          <p class="product_description">
+            Messenger Bag e.s.motion ten
+          </p>
+          <h4 class="product_price">$30.99</h4>
+          <button class="btn product_button">Add to cart</button>
+          
+        </div>
+      </aritcle>
+             
+          </section>
+        </div>
+        </div>
+           <!--most sell product end-->
+         <!--product section end-->
+      
+    
+  </main>
+  <div class="container-fluid contact">
+    <div class="container text-center">
+        <div class="conainer-header text-center">
+            <h1 class="text-uppercase">Get in touch</h1>
+            <p>House NO #48, Road NO #7/B, Dhanmondi, Dhaka, Bangladesh. Tel: (+88) 01741450354</p>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-8 getin-touch">
+                <div class="row">
+                    <form>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="" class="form-control required" placeholder="Your Name *">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="email" name="" class="form-control" placeholder="Your Email *">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <textarea name="" id="" class="form-control" rows="6" placeholder="Your Message *"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="submit" name="" class="btn btn-lg btn-success" value="Send Message">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+<!--footer start-->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe :</label>
+        <input type="email" id="subscribe" name="subscribe" class="footer_input"
+        placeholder="Your Email address"/>
+        <button class="btn btn-subscribe">Subscribe </button>
+      </div>
+      <div>
+        <p>&copy;Copyright2023.By S.M. Meriyan Islam</p>
+      </div>
+    </footer>
+    <!--footer end-->
+    <script src="/index.js"></script>
+</body>
+</html>

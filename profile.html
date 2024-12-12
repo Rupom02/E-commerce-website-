@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=""/>
+    <title>Ecommerce Project</title>
+</head>
+
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<link rel="stylesheet" href="style.css">
+<body class="body">
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <!--navbar start-->
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+          <div class="logo"><img class="logo-icon" src="./img/images (1).png">
+          <p>Heisenberg</p></div>
+        </li>
+        <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+        <li class="nav_list"><a href="regnew.html" class="nav_link">Register</a></li>
+        <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+        <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+        
+        <li class="nav_list">
+          <a href="cart.html" class="nav_list">
+            <span>
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart 2 Products - $124.40
+            </span>
+          </a>
+        </li>
+        
+        <li class="nav_list"><a href="profile.html" class="nav_link"><img class="profile-icon" src="./img/png-transparent-user-profile-computer-icons-profile-heroes-black-silhouette-thumbnail.png"></a></li>
+    </nav>
+     
+    </nav>
+
+
+
+    <main>
+      <section class="profile flex-center">
+        <h2 class="section-title text-center">User Profile</h2>
+        <div class="card flex-center">
+          <img src="./img/png-transparent-user-profile-computer-icons-profile-heroes-black-silhouette-thumbnail.png" alt="profile" class="profile__img" />
+          <h2 class="profile__name">Rupom Islam</h2>
+          <p class="profile__email">rupomislam2002@gmail.com</p>
+          <p class="profile__about">
+            I love to shop different types of gadegts.
+          </p>
+          <div class="profile__buttons">
+            <button class="btn profile__edit-btn">
+              <i class="far fa-edit fa-2x"></i>
+            </button>
+            <button class="btn profile__edit-btn">
+              <i class="far fa-trash-alt fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+
+
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe:</label>
+        <input type="email" id="subscribe" name="subscribe" class="footer_input"
+        placeholder="Your Email address"/>
+        <button class="btn btn-subscribe">Subscribe</button>
+      </div>
+      <div>
+        <p>&copy;Copyright2023.By S.M. Meriyan Islam</p>
+      </div>
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>
